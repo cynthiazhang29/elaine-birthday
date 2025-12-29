@@ -9,7 +9,7 @@ function closeModal() {
 
 function showMessage() {
   openModal(
-    "ur such a rizzy alpha sigma 67 goat twin ☺️ \n \n ok but fr \n \nYou’re kind, thoughtful, and genuinely one of the best people in the world 💗"
+    "ur such a rizzy alpha sigma goat twin ☺️ \n \n ok but fr \n \nYou’re kind, thoughtful, and genuinely one of the best people in the world 💗"
   );
 }
 
