@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Happy Birthday Elaine 💐</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Confetti -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+
+<body>
+
+  <div class="card">
+    <h1>Happy Birthday</h1>
+    <h2>Elaine 🤍</h2>
+
+    <img src="elaine.png" alt="Elaine" class="photo" />
+
+    <p class="intro">
+      You’re genuinely one of the best people in the world.
+      I hope today reminds you how loved you are.
+    </p>
+
+    <div class="buttons">
+      <button onclick="showMessage()">why you’re amazing 💖</button>
+      <button onclick="smile()">click if you’re smiling 🙂</button>
+      <button onclick="celebrate()">hehe 🎉</button>
+      <button onclick="openDonkey()">beloved messages from DOnkey 🫶</button>
+    </div>
+  </div>
+
+  <!-- MAIN MODAL -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">✕</span>
+      <p id="modal-text"></p>
+    </div>
+  </div>
+
+  <!-- DONKEY MODAL -->
+  <div id="donkey-modal" class="modal hidden">
+    <div class="modal-content large">
+      <span class="close" onclick="closeDonkey()">✕</span>
+      <h3>Messages from DOnkey 🤍</h3>
+
+      <div class="grid">
+        <button onclick="openModal('happy birthday elainey!!! \nilysm and u are the bestest friend i could ask for. u are always there for me and super smiley and a ray of sunshine. ur one of the most dedicated and brilliant people ik. go celebrate urself and happy 15 ilysmm \n-Cynthia')">Cynthia</button>
+        <button onclick="openModal('HAPPY BIRTHDAY ELAINE! \nBro I cant believe ur already 15. Ur so pro at dance and middle school was so fun with you. I still remember calling you on zoom like 5 years ago from random reason and it was so funny. I hope you have the best 15th birthday and that your chronic arthritis and back pains from dance goes away lmao. \n- lucy')">Lucy</button>
+        <button onclick="openModal('HI ELAINEEEE, \nHAPPY 15!!!!! I CANT BELEIVE UR SO OLD. ur an oldie hehe. but despite all of thatttttt I cant beleive Ive known u for so longgg omg and thank you so much for being my friend for LIKE THE ENTIRETY OF UR 15 YEARS and Im very grateful for the company u keep me hehehehe and yea HAVE A GREAT BIRTHDAY U DESERVE IT \ncheers, \nsofa')">Sophie</button>
+        <button onclick="openModal('Hi Elaine! \nWISHING U THE HAPPIEST 15! I hope that ur doing well—I see u in all those hdc insta posts and I’m like wowza that’s elaineeee? Still holding on to the hobbit map (in our cali storage now)! Promise we take a picture together w a hobbit something when we graduate? \nWith lots of love, \nTina ')">Tina</button>
+        <button onclick="openModal('hihhihi elaine!! \nHAPPY BIRTHDAYYYYYY! ive missed u a lot since we dont carpool or ride the bus to school together anymore, but im still so grateful to have you in my life! youre such a kind person and an amazing friend, and i hope u have the best birthday everrrr ❤️🎂🎉 \n-hailey')">Hailey</button>
+        <button onclick="openModal('elaine!!! \nhappy happy birthday to the scariest girl i know 🫶 i hope you have a minimally depressing  year as a fifteen year old and that um you find other people in your life to terrorize 😘 \nmissing your slap-on-the-heads (that was sarcasm), \nlexine (not sexine long rahh)')">Lexine</button>
+        <button onclick="openModal('HIHI E, \nHAPPY BDAY!!!! omg i miss u sm like i still remember when we were in middle school and went to japan tgt that was so fun 🥹 REMEMBER THE OLD GUY WHO GOT SUPER MAD AT ME AT THE HOTEL AND THE SUPER YUMMY WHITE RABBIT ICE CREAM LMAO oo and also when we went to the michelin star restaurant and it had like weird food so we gave it to our dads hahahahaaaa anywaysss i hope u have the best 15 ever!!! hope we can hang out tgt soon!! \n-julie')">Julie</button>
+        <button onclick="openModal('elaineyyy, \nHAPPY BIRTHDAYYYYY!!!! Have a wonderful 15th birthday and congratulations on being old now too!! You are such an amazing friend and so talented at dance. I wish you the best of luck in everything you do yayayayyay!!! Ilysmmmmm <3 \n- chelsea')">Chelsea</button>
+        <!-- add more -->
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
