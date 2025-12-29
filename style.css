@@ -160,3 +160,10 @@ button:hover {
     opacity: 1;
   }
 }
+
+.modal-content.poem {
+  width: 500px;
+  max-height: 70vh;
+  overflow-y: auto;
+  white-space: pre-line;
+}
