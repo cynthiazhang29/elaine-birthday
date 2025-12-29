@@ -22,7 +22,7 @@ function smile() {
 function celebrate() {
   confetti({
     particleCount: 200,
-    spread: 80,
+    spread: 100,
     origin: { y: 0.6 }
   });
 
