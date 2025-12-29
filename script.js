@@ -36,3 +36,20 @@ function openDonkey() {
 function closeDonkey() {
   document.getElementById("donkey-modal").classList.add("hidden");
 }
+
+function openPoem(poemText) {
+  const modal = document.getElementById("modal");
+  const modalContent = modal.querySelector(".modal-content");
+
+  modalContent.classList.add("poem");
+  document.getElementById("modal-text").textContent = poemText;
+  modal.classList.remove("hidden");
+}
+
+function closeModal() {
+  const modal = document.getElementById("modal");
+  const modalContent = modal.querySelector(".modal-content");
+
+  modalContent.classList.remove("poem");
+  modal.classList.add("hidden");
+}
