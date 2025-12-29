@@ -162,7 +162,7 @@ button:hover {
 }
 
 .modal-content.poem {
-  width: 500px;
+  width: 600px;
   max-height: 70vh;
   overflow-y: auto;
   white-space: pre-line;
